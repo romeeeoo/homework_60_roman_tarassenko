@@ -1,5 +1,6 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 
+from e_store_app.forms import ProductForm
 from e_store_app.models import Product
 
 
@@ -14,6 +15,26 @@ def product_view(request, pk):
     product = get_object_or_404(Product, pk=pk)
     context = {'product': product}
     return render(request, 'product.html', context)
+
+
+def add_view(request):
+    if request.method == 'GET':
+        form = ProductForm()
+        return render(request, 'add_product.html', context={'form': form})
+    elif request.method == 'POST':
+        form = ProductForm(request.POST)
+        if form.is_valid():
+            new_product = Product.objects.create(
+                name=form.cleaned_data['name'],
+                description=form.cleaned_data['description'],
+                category=form.cleaned_data['category'],
+                picture_link=form.cleaned_data['picture_link'],
+                stock=form.cleaned_data['stock'],
+                price=form.cleaned_data['price'],
+            )
+            return redirect("product_detailed", pk=new_product.pk)
+        else:
+            return render(request, 'add_product.html', context={'form': form})
 
 
 
