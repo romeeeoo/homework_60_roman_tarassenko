@@ -1,0 +1,563 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2022-09-30T14:26:35.973Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "other",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2022-09-30T14:40:38.749Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "1. The NoPhone Air",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2022-09-30T14:40:42.314Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "1. The NoPhone Air",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2022-09-30T14:42:15.268Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "2",
+    "object_repr": "2. Mini hand squirrel",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2022-09-30T14:43:02.015Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "3",
+    "object_repr": "3. Wacky waving inflatable tube guy",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2022-09-30T14:44:05.422Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "4",
+    "object_repr": "4. Baguette slippers",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2022-09-30T14:44:44.321Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "5",
+    "object_repr": "5. Baguette pillow",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2022-09-30T14:46:44.904Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "6",
+    "object_repr": "6. Cat-butt tissue holder",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add category",
+    "content_type": 7,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change category",
+    "content_type": 7,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete category",
+    "content_type": 7,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view category",
+    "content_type": 7,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add product",
+    "content_type": 8,
+    "codename": "add_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change product",
+    "content_type": 8,
+    "codename": "change_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete product",
+    "content_type": 8,
+    "codename": "delete_product"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view product",
+    "content_type": 8,
+    "codename": "view_product"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$eTtgXvzX2ZXB4ZI9thVdDQ$PX6TmU5OJfT9ZgIyhLODDsIx5uYHSGw9ltZlrDfClaM=",
+    "last_login": "2022-09-30T14:19:26.139Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "root@mail.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2022-09-30T14:19:16.251Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "e_store_app",
+    "model": "category"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "e_store_app",
+    "model": "product"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "bdsf9p47dt3i4ed2w4bpyti1gnyu41sc",
+  "fields": {
+    "session_data": ".eJxVjEsOAiEQBe_C2hCYlo8u3XsGAt2NjBpIhpmV8e5KMgvdvqp6LxHitpawdV7CTOIstDj8binig-sAdI_11iS2ui5zkkORO-3y2oifl939Oyixl1GDI6VRWX3KiZ3zJltgYIVHsKSVgSlrzMAE1iFpRg_-aybO3iBM4v0B5NQ4ZA:1oeGrO:JhgvJF7KczgAz0y6RvCSNrw5VjyE6QUruxR50vIHmrc",
+    "expire_date": "2022-10-14T14:19:26.140Z"
+  }
+},
+{
+  "model": "e_store_app.category",
+  "pk": 1,
+  "fields": {
+    "name": "other"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 1,
+  "fields": {
+    "name": "The NoPhone Air",
+    "description": "This is the phone of the future. It's so light, you'll barely be able to feel it in your hand. It's so quiet, you'll never hear it ring. And it's so advanced, it can't do anything at all. It's basically a ghost of a phone and it can be yours.",
+    "picture_link": "https://cdn.thisiswhyimbroke.com/buying-guides-thumb/54/the-nophone-air_400x.jpg",
+    "category": 1,
+    "stock": 0,
+    "price": "6.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 2,
+  "fields": {
+    "name": "Mini hand squirrel",
+    "description": "Why? The better question may be: Why not? These vinyl squirrel finger covers are the 2.0 version of the sock puppets we all grew up loving. They fit seamlessly onto your fingertips, creating the illusion that your palm is the squirrel’s body. Slipping these on should be followed by laughs galore—and also some very strange looks. Here are another 70+ funny gag gifts that can get anyone laughing.",
+    "picture_link": "https://www.rd.com/wp-content/uploads/2021/06/Mcphee-Archie-Handi-Squirrel_ecomm_via-amazon.com_.jpg?w=1243",
+    "category": 1,
+    "stock": 234,
+    "price": "45.46"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 3,
+  "fields": {
+    "name": "Wacky waving inflatable tube guy",
+    "description": "You don’t need to wait for your next car wash to spot one of these crazy inflatable guys. This mini version is fun to keep on top of your desk or any surface around the house with foot traffic. If you love this sort of silly gift, wait until you read these anti-jokes you can’t help but laugh at anyway.",
+    "picture_link": "https://www.rd.com/wp-content/uploads/2021/06/Wacky-Waving-Inflatable-Tube-Guy_ecomm_via-amazon.com_.jpg?w=981",
+    "category": 1,
+    "stock": 76,
+    "price": "15.99"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 4,
+  "fields": {
+    "name": "Baguette slippers",
+    "description": "If you love carbs and want everyone to know it (or at least everyone in your house), this is the item for you! These super comfy slippers also come in another baked-good finish—croissants—or choose avocado, pizza, or cake slip-ons, if that’s more your style. While Amazon’s known for its gifts and items, did you know it has a new national health care system, Amazon Care?",
+    "picture_link": "https://www.rd.com/wp-content/uploads/2021/06/french-baguette-adult-slippers_ecomm_via-amazon.com_.jpg?w=1140",
+    "category": 1,
+    "stock": 23,
+    "price": "44.43"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 5,
+  "fields": {
+    "name": "Baguette pillow",
+    "description": "If you love a good theme, get this baguette pillow to match your new baguette slippers! At 40 inches long (the size of a preschooler!), it’s not a subtle decor item, but reviewers say it’s surprisingly comfy. For a more traditional place to rest your head and dream about bread, buy one of the best pillows for every type of sleeper.",
+    "picture_link": "https://www.rd.com/wp-content/uploads/2021/06/40-in-3D-Simulation-Bread-Shape-Pillow_ecomm_via-amazon.com_.jpg?w=944",
+    "category": 1,
+    "stock": 103,
+    "price": "34.99"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 6,
+  "fields": {
+    "name": "Cat-butt tissue holder",
+    "description": "What’s cuter than pulling a tissue from a cat-butt holder? Um, we can probably think of a few things. But if you can’t, this fluffy feline can hold your tissues in a fun, albeit strange and slightly weird, way.",
+    "picture_link": "https://www.rd.com/wp-content/uploads/2021/06/WHAT-ON-EARTH-Cat-Butt-Tissue-Holder_ecomm_via-amazon.com_.jpg?resize=1536,1536",
+    "category": 1,
+    "stock": 332,
+    "price": "23.00"
+  }
+}
+]
