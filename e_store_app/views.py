@@ -37,4 +37,19 @@ def add_view(request):
             return render(request, 'add_product.html', context={'form': form})
 
 
-
+def update_view(request, pk):
+    product = get_object_or_404(Product, pk=pk)
+    if request.method == "POST":
+        form = ProductForm(request.POST)
+        if form.is_valid():
+            product.name = form.cleaned_data['name']
+            product.description = form.cleaned_data['description']
+            product.category = form.cleaned_data['category']
+            product.picture_link = form.cleaned_data['picture_link']
+            product.stock = form.cleaned_data['stock']
+            product.price = form.cleaned_data['price']
+            product.save()
+            return redirect("product_detailed", pk=product.pk)
+    elif request.method == "GET":
+        form = ProductForm(instance=product)
+        return render(request, 'update_product.html', context={'form': form})

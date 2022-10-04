@@ -3,7 +3,7 @@
 {% block content %}
     <div class="row">
         {% for product in products %}
-            {% if product.stock > 1 %}
+            {% if product.stock >= 1 %}
                 <div class="col-md-4 col-sm-12 col-lg-3">
                     <div class="card card-products card-products-img mt-4">
                         <div class="img-card-container">
