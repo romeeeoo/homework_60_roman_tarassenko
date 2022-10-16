@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    {% include "partial/partial_product_detailed.html" %}
+    <a href="{% url "product_delete" product.pk %} " class="btn btn-outline-secondary text-uppercase btn-blue mt-5">
+        delete</a>
+    <a href="{% url "update_product" product.pk %} " class="btn btn-outline-secondary text-uppercase btn-blue mt-5">
+        update</a>
+{% endblock %}

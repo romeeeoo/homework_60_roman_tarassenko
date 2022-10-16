@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="row">
+        {% for product in products %}
+            {% if product.stock >= 1 %}
+              {% include "partial/product.html" %}
+            {% endif %}
+        {% endfor %}
+    </div>
+{% endblock %}

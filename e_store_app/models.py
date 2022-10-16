@@ -1,5 +1,6 @@
 from django.db import models
 
+from e_store_app.managers import ProductManager
 
 # Create your models here.
 
@@ -20,6 +21,7 @@ class Product(models.Model):
     category = models.ForeignKey(Category, on_delete=models.CASCADE, default=DEFAULT_STATUS_ID)
     stock = models.PositiveIntegerField(default=0)
     price = models.DecimalField(max_digits=7, decimal_places=2)
+    object = ProductManager()
 
     def __str__(self):
         return "{}. {}".format(self.pk, self.name)
