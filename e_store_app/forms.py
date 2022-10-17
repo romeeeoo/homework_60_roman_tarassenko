@@ -1,7 +1,7 @@
 from django.forms import ModelForm
+from django import forms
 
 from e_store_app.models import Product
-
 
 
 class ProductForm(ModelForm):
@@ -15,3 +15,7 @@ class ProductForm(ModelForm):
             'stock',
             'price'
         ]
+
+
+class SimpleSearchForm(forms.Form):
+    search = forms.CharField(max_length=100, required=False, label="Найти")
