@@ -29,4 +29,8 @@
         </tbody>
     </table>
     <p>Total: {{ total }}</p>
+    <h1>Enter your contacts</h1>
+    <form action="{% url "order" %}" method="POST">
+       {%  include 'partial/order_form.html' with button_text="ORDER" %}
+    </form>
 {% endblock %}

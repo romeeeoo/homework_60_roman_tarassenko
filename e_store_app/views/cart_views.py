@@ -3,7 +3,7 @@ from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import TemplateView, DeleteView
 
-from e_store_app.forms import ProductToCartForm
+from e_store_app.forms.order_forms import OrderForm
 from e_store_app.models import Product, CartProduct
 
 
@@ -31,8 +31,14 @@ class ProductToCart(View):
 class CartWithProductView(TemplateView):
     template_name = "cart/cart_with_product_list.html"
 
+    def get(self, request, *args, **kwargs):
+
+        return super().get(request, *args, **kwargs)
+
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        form = OrderForm()
+        context["form"] = form
         products_in_cart = CartProduct.objects.all()
         context["products_in_cart"] = products_in_cart
         total = 0
@@ -45,6 +51,21 @@ class CartWithProductView(TemplateView):
 class DeleteProductFromCart(DeleteView):
     model = CartProduct
     success_url = reverse_lazy('cart')
+
+
+class CreateOrderView(View):
+
+    def post(self, request, *args, **kwargs):
+        form = OrderForm(request.POST)
+        if form.is_valid():
+            order = form.save()
+            cart_products = CartProduct.objects.all()
+            order.products.set(cart_products)
+            order.save()
+            return redirect("index")
+
+
+
 
 
 
