@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <table class="table">
+        <thead>
+        <tr>
+
+            <th scope="col">Product</th>
+            <th scope="col">Price</th>
+            <th scope="col">Qty</th>
+            <th scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for product in products_in_cart %}
+            <tr>
+                <td>{{ product.product.name }}</td>
+                <td>{{ product.product.price }}</td>
+                <td>{{ product.quantity }}</td>
+                <td>{% widthratio product.product.price 1 product.quantity %}</td>
+                <td>
+                    <form action="{% url 'delete_product_from_cart' product.pk %}" method="POST">
+                        {% csrf_token %}
+                      <input class="btn btn-outline-danger mt-5" type="submit" value="Delete">
+                    </form>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+    <p>Total: {{ total }}</p>
+{% endblock %}
