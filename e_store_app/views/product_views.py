@@ -1,19 +1,20 @@
-# from django.shortcuts import render, get_object_or_404, redirect
+
 from urllib.parse import urlencode
 
 from django.db.models import Q
 from django.urls import reverse, reverse_lazy
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
-from e_store_app.forms import ProductForm, SimpleSearchForm
+
 from e_store_app.models import Product
+from e_store_app.forms import ProductForm, SimpleSearchForm
+
 
 
 # def index_view(request):
 #     products = Product.objects.all().order_by('category__name', 'name')
 #     context = {'products': products}
 #     return render(request, 'index.html', context)
-
 
 class ShopListView(ListView):
     template_name = "product/index.html"
@@ -61,7 +62,6 @@ class ProductDetailView(DetailView):
     context_object_name = 'product'
 
 
-
 # def add_view(request):
 #     if request.method == 'GET':
 #         form = ProductForm()
@@ -80,7 +80,6 @@ class ProductDetailView(DetailView):
 #             return redirect("product_detailed", pk=new_product.pk)
 #         else:
 #             return render(request, 'add_product.html', context={'form': form})
-
 
 class ProductCreateView(CreateView):
     template_name = "product/add_product.html"
@@ -121,4 +120,14 @@ class ProductDeleteView(DeleteView):
     template_name = "product/product_confirm_delete.html"
     model = Product
     success_url = reverse_lazy("index")
+
+
+
+
+
+
+
+
+
+
 
