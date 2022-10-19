@@ -2,14 +2,14 @@
 
 {% block content %}
     <div class="row">
-         <div class="mt-4">{% include 'partial/simple_search.html' %}</div>
+        <div class="mt-4">{% include 'partial/simple_search.html' %}</div>
         {% for product in products %}
             {% if product.stock >= 1 %}
-              {% include "partial/product.html" %}
-            {% endif %}
-            {% if is_paginated  %}
-                {% include "partial/pagination.html" %}
+                {% include "partial/product.html" %}
             {% endif %}
         {% endfor %}
+        {% if is_paginated %}
+            {% include "partial/pagination.html" %}
+        {% endif %}
     </div>
 {% endblock %}
