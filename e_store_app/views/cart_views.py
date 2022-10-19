@@ -4,7 +4,7 @@ from django.views import View
 from django.views.generic import TemplateView, DeleteView
 
 from e_store_app.forms.order_forms import OrderForm
-from e_store_app.models import Product, CartProduct
+from e_store_app.models import Product, CartProduct, ProductsOrders
 
 
 class ProductToCart(View):
@@ -59,8 +59,11 @@ class CreateOrderView(View):
         form = OrderForm(request.POST)
         if form.is_valid():
             order = form.save()
-            cart_products = CartProduct.objects.all()
-            order.products.set(cart_products)
+
+            products_in_cart = CartProduct.objects.all()
+            for p in products_in_cart:
+                print(p)
+                ProductsOrders.objects.create(product=p.product, order=order, order_quantity=p.quantity)
             order.save()
             return redirect("index")
 
