@@ -104,6 +104,45 @@
   }
 },
 {
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2022-10-19T14:16:36.069Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "toys",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2022-10-19T14:16:38.781Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "toys",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2022-10-19T14:16:53.040Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "3",
+    "object_repr": "device",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
   "model": "auth.permission",
   "pk": 1,
   "fields": {
@@ -392,11 +431,119 @@
   }
 },
 {
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add cart product",
+    "content_type": 9,
+    "codename": "add_cartproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change cart product",
+    "content_type": 9,
+    "codename": "change_cartproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete cart product",
+    "content_type": 9,
+    "codename": "delete_cartproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view cart product",
+    "content_type": 9,
+    "codename": "view_cartproduct"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add order",
+    "content_type": 10,
+    "codename": "add_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change order",
+    "content_type": 10,
+    "codename": "change_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete order",
+    "content_type": 10,
+    "codename": "delete_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view order",
+    "content_type": 10,
+    "codename": "view_order"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add products orders",
+    "content_type": 11,
+    "codename": "add_productsorders"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change products orders",
+    "content_type": 11,
+    "codename": "change_productsorders"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete products orders",
+    "content_type": 11,
+    "codename": "delete_productsorders"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view products orders",
+    "content_type": 11,
+    "codename": "view_productsorders"
+  }
+},
+{
   "model": "auth.user",
   "pk": 1,
   "fields": {
     "password": "pbkdf2_sha256$390000$eTtgXvzX2ZXB4ZI9thVdDQ$PX6TmU5OJfT9ZgIyhLODDsIx5uYHSGw9ltZlrDfClaM=",
-    "last_login": "2022-09-30T14:19:26.139Z",
+    "last_login": "2022-10-19T14:16:25.480Z",
     "is_superuser": true,
     "username": "admin",
     "first_name": "",
@@ -474,6 +621,30 @@
   }
 },
 {
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "e_store_app",
+    "model": "cartproduct"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "e_store_app",
+    "model": "order"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "e_store_app",
+    "model": "productsorders"
+  }
+},
+{
   "model": "sessions.session",
   "pk": "bdsf9p47dt3i4ed2w4bpyti1gnyu41sc",
   "fields": {
@@ -482,10 +653,56 @@
   }
 },
 {
+  "model": "sessions.session",
+  "pk": "tyd3x89vki6o9za28qc1furmnsqcykg8",
+  "fields": {
+    "session_data": ".eJxVjEsOAiEQBe_C2hCYlo8u3XsGAt2NjBpIhpmV8e5KMgvdvqp6LxHitpawdV7CTOIstDj8binig-sAdI_11iS2ui5zkkORO-3y2oifl939Oyixl1GDI6VRWX3KiZ3zJltgYIVHsKSVgSlrzMAE1iFpRg_-aybO3iBM4v0B5NQ4ZA:1ol9rt:s3o2lAYbDSkmQoZSHNO_oFdto_GBfs3BXacDlKq1Ipo",
+    "expire_date": "2022-11-02T14:16:25.482Z"
+  }
+},
+{
+  "model": "e_store_app.cartproduct",
+  "pk": 1,
+  "fields": {
+    "product": 6,
+    "quantity": 1
+  }
+},
+{
+  "model": "e_store_app.cartproduct",
+  "pk": 2,
+  "fields": {
+    "product": 4,
+    "quantity": 2
+  }
+},
+{
+  "model": "e_store_app.cartproduct",
+  "pk": 3,
+  "fields": {
+    "product": 7,
+    "quantity": 1
+  }
+},
+{
   "model": "e_store_app.category",
   "pk": 1,
   "fields": {
     "name": "other"
+  }
+},
+{
+  "model": "e_store_app.category",
+  "pk": 2,
+  "fields": {
+    "name": "toys"
+  }
+},
+{
+  "model": "e_store_app.category",
+  "pk": 3,
+  "fields": {
+    "name": "device"
   }
 },
 {
@@ -558,6 +775,126 @@
     "category": 1,
     "stock": 332,
     "price": "23.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 7,
+  "fields": {
+    "name": "FFFF",
+    "description": "FFFFF",
+    "picture_link": "https://picsum.photos/200/300",
+    "category": 1,
+    "stock": 20,
+    "price": "200.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 8,
+  "fields": {
+    "name": "hhhh",
+    "description": "hhhh",
+    "picture_link": "",
+    "category": 1,
+    "stock": 200,
+    "price": "100.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 9,
+  "fields": {
+    "name": "dddd",
+    "description": "ffffff",
+    "picture_link": "https://picsum.photos/200/300",
+    "category": 2,
+    "stock": 5,
+    "price": "24.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 10,
+  "fields": {
+    "name": "fhdfghdrgdr",
+    "description": "gregdrgdrg",
+    "picture_link": "",
+    "category": 2,
+    "stock": 3,
+    "price": "35.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 11,
+  "fields": {
+    "name": "tyhdrthdt",
+    "description": "rgdrgdrg",
+    "picture_link": "",
+    "category": 1,
+    "stock": 555,
+    "price": "333.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 12,
+  "fields": {
+    "name": "tfhtht",
+    "description": "grgdrgdrgd",
+    "picture_link": "",
+    "category": 2,
+    "stock": 5666,
+    "price": "44.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 13,
+  "fields": {
+    "name": "bfgbftbhtf",
+    "description": "rgdrgdrg",
+    "picture_link": "",
+    "category": 1,
+    "stock": 444,
+    "price": "33.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 14,
+  "fields": {
+    "name": "drgdrg",
+    "description": "drgrgr",
+    "picture_link": "",
+    "category": 1,
+    "stock": 3333,
+    "price": "33.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 15,
+  "fields": {
+    "name": "4gtdgdtg",
+    "description": "drgdrgdr",
+    "picture_link": "https://picsum.photos/200/300",
+    "category": 2,
+    "stock": 444,
+    "price": "44.00"
+  }
+},
+{
+  "model": "e_store_app.product",
+  "pk": 16,
+  "fields": {
+    "name": "drtgdtgdr",
+    "description": "drgdrgdrg",
+    "picture_link": "drgdrg",
+    "category": 2,
+    "stock": 555,
+    "price": "444.00"
   }
 }
 ]
