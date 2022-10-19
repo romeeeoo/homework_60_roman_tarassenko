@@ -59,12 +59,11 @@ class CreateOrderView(View):
         form = OrderForm(request.POST)
         if form.is_valid():
             order = form.save()
-
             products_in_cart = CartProduct.objects.all()
             for p in products_in_cart:
-                print(p)
                 ProductsOrders.objects.create(product=p.product, order=order, order_quantity=p.quantity)
             order.save()
+            products_in_cart.delete()
             return redirect("index")
 
 
